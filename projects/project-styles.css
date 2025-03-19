@@ -235,6 +235,28 @@ a:hover {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Captioned Images */
+.visual-comparison {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.comparison-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comparison-item img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -251,9 +273,14 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
+    .comparison-item {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    .visual-comparison img {
-        max-width: 80%;
+    .comparison-item img {
+        max-width: 400px;
     }
 }
 
