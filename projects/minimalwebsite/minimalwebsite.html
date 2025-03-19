@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Minimal Website | James Evans</title>
+    <link rel="stylesheet" href="../project-styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#projects">Projects</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Back to Portfolio Button -->
+    <section class="back-to-portfolio" tag="top">
+        <a href="/index.html" class="btn">Back to Portfolio</a>
+    </section>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Case Study: Minimal Website</h1>
+        <p>Designing an ultra-lightweight, multi-page website within strict bandwidth limitations.</p>
+    </header>
+
+    <!-- Case Study Content -->
+    <section class="case-study">
+        <div class="case-study-header">
+            <img src="minimalwebsite.png" alt="Minimal Website Screenshot">
+        </div>
+
+        <!-- Project Overview -->
+        <section class="case-study-section">
+            <h2>Project Overview</h2>
+            <p>
+                This project was originally developed for my <strong>Intro to Interactive Media</strong> course, where the objective was to create a functional and aesthetic website under <strong>30KB per page</strong>. 
+                Beyond the class requirement, I saw this as an opportunity to challenge myself—exploring how far I could push a <strong>low-bandwidth design</strong> while maintaining my creative vision.
+            </p>
+            <ul class="about-list">
+                <li><strong>Project Type:</strong> Interactive Web Experience</li>
+                <li><strong>Goal:</strong> Maximize performance while maintaining a modern, minimal aesthetic</li>
+                <li><strong>Tools Used:</strong> HTML, CSS, JavaScript, Photoshop, GitHub</li>
+                <li><strong>Live Project:</strong> <a href="https://minimalsounddesign.netlify.app/" target="_blank">View Website</a></li>
+                <li><strong>GitHub Repo:</strong> <a href="https://github.com/jamesburtonevans/minimal-site" target="_blank">View Source Code</a></li>
+            </ul>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="case-study-section">
+            <h2>Defining the Problem</h2>
+            <h3>Designing Within Constraints</h3>
+            <p>
+                This project was an exercise in limitations—how do you create a <strong>multi-page, interactive experience</strong> under strict bandwidth constraints? 
+                The challenge wasn't just reducing file sizes, but doing so while preserving <strong>visual quality, sound design, and usability</strong>.
+            </p>
+        </section>
+
+        <!-- Process Section -->
+        <section class="case-study-section">
+            <h2>Process</h2>
+            <h3>How I Built It</h3>
+
+            <h3>1. Designing the Structure</h3>
+            <p>
+                I started by creating a <strong>Photoshop mockup</strong> of the site’s layout, ensuring a balance between <strong>aesthetics and functionality</strong>. The interface was completely original—rather than following conventional web navigation, I implemented:
+            </p>
+            <ul class="about-list">
+                <li>A <strong>two-button navigation system</strong> for secondary pages</li>
+                <li>A <strong>sidebar with tabbed navigation</strong> for tertiary pages</li>
+            </ul>
+            <p>
+                This allowed users to explore content efficiently while keeping <strong>each page load as minimal as possible</strong>.
+            </p>
+
+            <h3>2. Managing Assets & Bandwidth</h3>
+            <p>
+                With 12 pages and multiple graphic and audio assets, file size management became a major focus. To meet the <strong>30KB per page limit</strong>, I optimized assets by:
+            </p>
+            <ul class="about-list">
+                <li>Using <strong>CSS-based visuals</strong> wherever possible to eliminate unnecessary images</li>
+                <li>Compressing images extensively while balancing quality</li>
+                <li>Encoding and compressing <strong>audio files</strong> to their smallest possible size</li>
+            </ul>
+
+            <h3>3. Development & Testing</h3>
+            <p>
+                Since this was my <strong>first full web project</strong>, structuring multiple pages, handling assets, and maintaining a consistent experience across the site were key learning experiences. I also tested performance using <strong>Google Lighthouse</strong> to ensure load times stayed minimal.
+            </p>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="case-study-section">
+            <h2>Final Outcome</h2>
+            <h3>What I Built</h3>
+            <p>
+                The final website successfully met the <strong>low-bandwidth challenge</strong> while maintaining a functional, aesthetically cohesive design. The site:
+            </p>
+            <ul class="about-list">
+                <li>Loads in <strong>under 100ms</strong>, even with multiple assets</li>
+                <li>Maintains <strong>a structured, engaging layout</strong> despite strict file size constraints</li>
+                <li>Includes <strong>compressed sound design</strong> within bandwidth limits</li>
+            </ul>
+        </section>
+
+        <!-- Lessons Learned -->
+        <section class="case-study-section">
+            <h2>Reflection</h2>
+            <h3>What I Learned</h3>
+            <p>
+                This project pushed me to think critically about <strong>optimization, performance, and prioritization</strong> in web design. It helped me develop:
+            </p>
+            <ul class="about-list">
+                <li>A better understanding of <strong>efficient asset management</strong></li>
+                <li>The ability to <strong>balance performance with design</strong></li>
+                <li>Experience working with <strong>multi-page site structures</strong></li>
+            </ul>
+            <p>
+                The project exceeded my expectations—especially considering it was my first full website build. It reinforced important <strong>fundamentals in HTML, CSS, and JavaScript</strong>, while also demonstrating how constraints can lead to innovative solutions.
+            </p>
+        </section>
+
+        <!-- Next Steps -->
+        <section class="case-study-section">
+            <h2>Next Steps</h2>
+            <ul class="about-list">
+                <li>Implement <strong>SVGs</strong> instead of raster images for better optimization</li>
+                <li>Refine visual design elements for improved aesthetics</li>
+                <li>Conduct usability testing to enhance <strong>navigation and user experience</strong></li>
+            </ul>
+            <p>
+                While this was a class project, it was a valuable experiment in <strong>performance-focused web design</strong>, and I plan to carry these principles into future projects.
+            </p>
+        </section>
+
+    </section>
+
+    <!-- Back to Portfolio Button -->
+    <section class="back-to-portfolio">
+        <a href="/index.html" class="btn">Back to Portfolio</a>
+    </section>
+
+</body>
+</html>

@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Evans Portfolio</title>
+    <title>Your Name - UX & Web Designer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to James Evans' Portfolio</h1>
-    <p>There will be portfolio-related things here soon enough!</p>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hi, I'm James Evans</h1>
+        <p>UX & Web Designer | Creating intuitive and engaging digital experiences</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <ul class="about-list">
+            <li>I specialize in UX and web design.</li>
+            <li>I'm passionate about designing seamless user experiences and optimizing digital interfaces.</li>
+            <li>Tools: Figma, HTML, CSS, JavaScript, GitHub</li>
+            <li>Currently looking for a UX/Web internship in Raleigh, NC.</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="project-grid">
+            <a href="./projects/somethingnew-landingpage/somethingnew-landingpage.html" class="project-card">
+                <img src="./projects/somethingnew-landingpage/somethingnew-landingpage.png" alt="Minimal Website Project">
+                <h3>Landing Page for Album</h3>
+                <p>A visually immersive landing page designed to extend the identity of my album <i>Something New</i>.</p>
+            </a>
+            <a href="./projects/minimalwebsite/minimalwebsite.html" class="project-card">
+                <img src="./projects/minimalwebsite/minimalwebsite.png" alt="Minimal Website Project">
+                <h3>Minimal Website</h3>
+                <p>An interactive, ultra-lightweight website designed for low-bandwidth performance.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <p>Email: <a href="mailto:jamesburtonevans@gmail.com">jamesburtonevans@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/james-evans-design/" target="_blank">linkedin.com/in/james-evans-design/</a></p>
+        <p>GitHub: <a href="https://github.com/jamesburtonevans" target="_blank">github.com/jamesburtonevans</a></p>
+    </section>
+
 </body>
 </html>
