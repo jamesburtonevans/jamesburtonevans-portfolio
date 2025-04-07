@@ -188,16 +188,17 @@ h2 {
 
 /* Project Grid */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .project-card {
+    flex: 0 1 300px;
     text-decoration: none;
     color: var(--text-color);
     background: var(--card-bg);
-    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid var(--border-color);
@@ -205,6 +206,7 @@ h2 {
     position: relative;
     overflow: hidden;
 }
+
 
 .project-card img {
     width: 100%;
