@@ -546,6 +546,8 @@ nav.glass-bg {
     outline: none;
 }
 
+/* === RESPONSIVE DESIGN === */
+
 @media (max-width: 600px) {
   nav ul {
     gap: 0.7rem;
