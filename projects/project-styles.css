@@ -108,7 +108,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
 }
 .case-study-section h2, .case-study-section h3 {
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 75px;
     font-weight: 700;
 }
 
@@ -127,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Lists */
 .about-list {
+    flex: 1 1 300px;
     list-style: none;
     padding: 0;
 }
@@ -305,6 +307,11 @@ nav.glass-bg {
 /* === CONTENT COMPOSITION === */
 
 /* Responsive Image Styling */
+img {
+    z-index: 3;
+    border-radius: 8px;
+}
+
 .visual-comparison {
     display: flex;
     justify-content: center;
@@ -328,6 +335,76 @@ nav.glass-bg {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Horizontal Content */
+.horizontal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.nowrap-content {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.horizontal-content > * {
+    width: 50%;
+    min-width: 300px;
+    flex: 1 1 300px;
+    max-width: 600px;
+}
+
+/* Right Aligned Text */
+.right-aligned-text {
+    text-align: right;
+}
+
+/* Half-Width Text */
+.half-width-text {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 400px;
+}
+
+/* Phone Mockup Image */
+.phone-mockup-row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 1%;
+    justify-content: center;
+    gap: 16px;
+    flex: 0 1 auto;
+    max-width: 100%;
+    min-width:100px;
+    box-sizing: border-box;
+}
+
+.phone-mockup-image {
+    width: 100%;
+    max-width: 220px;
+    min-width: 150px;
+    justify-self: center;
+    display: block;
+    margin: 0 6px;
+    border-radius: 20% / 10%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.phone-mockup-image-small {
+    width: 50%;
+    height: auto;
+    max-width: 220px;
+    min-width: 75px;
+    justify-self: center;
+    display: block;
+    margin: 0 3px;
+    border-radius: 20% / 10%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
 /* Video Container */
 .video-container {
     display: flex;
@@ -348,7 +425,8 @@ nav.glass-bg {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     text-align: center;
 }
 
@@ -356,11 +434,14 @@ nav.glass-bg {
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex: 1 1 300px;
+    min-width: 0;
     align-items: center;
 }
 
 .comparison-item img {
     display: block;
+    width: 100%;
     max-width: 300px;
     height: auto;
 }
@@ -483,6 +564,16 @@ nav.glass-bg {
 
     .comparison-item img {
         max-width: 200px;
+    }
+    .horizontal-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .phone-mockup-row {
+        flex-direction: row;
+    }
+    .phone-mockup-image {
+        margin: 8px 0;
     }
 }
 
