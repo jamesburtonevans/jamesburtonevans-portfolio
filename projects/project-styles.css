@@ -48,6 +48,7 @@ hr {
     transform: scale(var(--glass-base-scale));
 }
 
+/* GLASS BREATHING
 .glass-bg::before {
     content: '';
     position: absolute;
@@ -93,6 +94,8 @@ hr {
         transform: scale(var(--glass-base-scale));
     }
 }
+
+*/
 
 /* === TYPOGRAPHY === */
 
@@ -373,34 +376,23 @@ img {
 .phone-mockup-row {
     display: flex;
     flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     padding: 1%;
-    justify-content: center;
     gap: 16px;
-    flex: 0 1 auto;
-    max-width: 100%;
-    min-width:100px;
+    max-width: fit-content;
+    overflow-x: auto;
+    margin: 0 auto;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
 }
 
 .phone-mockup-image {
-    width: 100%;
-    max-width: 220px;
-    min-width: 150px;
-    justify-self: center;
-    display: block;
-    margin: 0 6px;
-    border-radius: 20% / 10%;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.phone-mockup-image-small {
-    width: 50%;
     height: auto;
+    width: auto;
     max-width: 220px;
-    min-width: 75px;
-    justify-self: center;
     display: block;
-    margin: 0 3px;
     border-radius: 20% / 10%;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
@@ -574,6 +566,7 @@ img {
     }
     .phone-mockup-image {
         margin: 8px 0;
+        max-width: 150px;
     }
 }
 
